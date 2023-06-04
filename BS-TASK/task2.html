@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .head{
+        height: fit-content;
+        width: 100%;
+        text-align: center;
+        background-color: turquoise;
+        padding: 2px;
+        font-size: larger;
+        font-weight: bold;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;    
+        text-align: center;
+        gap: 5px;
+        background-color: lightgray;
+        color: white;
+        padding: 6px;
+    }
+    .navelement{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        text-align: center;
+    }
+    .whitebox{
+        background-color: #fff;
+        height: 1000px;
+        width: 80%;
+    }
+    .greybox{
+        background-color: gray;
+        height: 1000px;
+        width: 20%;
+        color: #fff;
+    }
+
+</style>
+<body>
+    <div class="head"><p>Ehtnus layout</p></div>
+    <div class="nav">
+        <div class="navelement">HOME</div>
+        <div class="navelement">MENU</div>
+        <div class="navelement">ABOUT</div>
+        <div class="navelement">CONTACT</div>
+        <div class="navelement" style="width: 60%; text-align: end;">SIGNUP</div>
+        <div class="navelement">LOGIN</div>
+    </div>
+    <div class="boxes">
+        <div class="whitebox">Write your content here</div>
+        <div class="greybox">this is</div>
+    </div>
+</body>
+</html>

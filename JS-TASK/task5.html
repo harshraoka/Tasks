@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="number">Enter a Number to be Reversed</label>
+    <input type="text" name="number" id="num">
+    <button type="button" onclick="Reverse()">Reverse</button>
+    <div id="error"></div>
+    <div id="answer"></div>
+    <script>
+        const Reverse = () => {
+            const number = document.getElementById("num").value
+            if (number) {
+                const result = Number(String(number).split('').reverse().join(''));
+                document.getElementById("answer").innerHTML = `The Reverse number is: ${result}`
+                document.getElementById("error").innerHTML = ""
+                document.getElementById("num").style.border = "2px solid black"
+            } else {
+                document.getElementById("error").innerHTML = "Please enter the value"
+                document.getElementById("num").style.border = "2px solid red"
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="number">Enter a Number A</label>
+    <input type="number" name="number" id="num">
+    <label for="number1">Enter a Number B</label>
+    <input type="number1" name="number1" id="num1">
+    <button type="button" onclick="Reverse()">Multiply</button>
+    <div id="error"></div>
+    <div id="answer"></div>
+    <script>
+        const Reverse = () => {
+            const a = document.getElementById("num").value
+            const b = document.getElementById("num1").value
+            if (a && b) {
+                const result = a * b;
+                document.getElementById("answer").innerHTML = `The Reverse number is: ${result}`
+                document.getElementById("error").innerHTML = ""
+                document.getElementById("num").style.border = "2px solid black"
+            } else {
+                document.getElementById("error").innerHTML = "Please enter the value"
+                document.getElementById("num").style.border = "2px solid red"
+            }
+        }
+    </script>
+</body>
+
+</html>

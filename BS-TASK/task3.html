@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 500px;
+    margin: auto;
+    background-color: lightgray;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.inputs{
+    
+}
+
+.icon{
+    border: 1px solid;
+}
+
+i{
+    padding: 2px;
+}
+
+.labels{
+    text-align: end;
+    padding-right: 30px;
+    width: 200px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.submitb{
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+</style>
+<body>
+<form action="">
+    <div class="main">
+        <div class="row">
+            <div class="labels">First Name</div>
+            <div class="icon"><i class="fa-solid fa-user"></i></div>
+            <div class="inputs" style="height: 100%;"><input type="text" required placeholder="First Name"></div>
+        </div>
+        <div class="row">
+            <div class="labels">Last Name</div>
+            <div class="icon"><i class="fa-solid fa-user"></i></div>
+            <div class="inputs" style="height: 100%;"><input type="text" required placeholder="Last Name"></div>
+        </div>
+        <div class="row">
+            <div class="labels">Email</div>
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="inputs" style="height: 100%;"><input type="email" required placeholder="E-Mail Adderss"></div>
+        </div>
+        <div class="row">
+            <div class="labels">Phone</div>
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="inputs" style="height: 100%;"><input type="number" required placeholder="(+91) 9423659864"></div>
+        </div>
+        <div class="row">
+            <div class="labels">Address</div>
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="inputs" style="height: 100%;"><input type="text" required placeholder="Address"></div>
+        </div>
+        <div class="row">
+            <div class="labels">City</div>
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="inputs" style="height: 100%;"><input type="text" required placeholder="City"></div>
+        </div>
+        <div class="row">
+            <div class="labels">State</div>
+            <div class="icon"><i class="fa-solid fa-list"></i></div>
+            <div class="inputs"  style="height: 100%;">
+                <input list="States" required placeholder="Please Select Your State">
+                <datalist id="States">
+                  <option value="Maharashtra">
+                  <option value="Rajasthan">
+                  <option value="West Bengal">
+                  <option value="Kerala">
+                  <option value="Tamil Nadu">
+                </datalist>
+            </div>
+        </div>
+        <div class="row">
+            <div class="labels">Do you have hosting?</div>
+            
+            <div class="inputs" style="height: 100%;"><input type="radio" required ></div>
+            <label >Yes</label><br>
+            <div class="inputs" style="height: 100%;"><input type="radio" required ></div>
+            <label >No</label><br>
+        </div>
+        <div class="row">
+            <div class="labels">City</div>
+            <div class="icon"><i class="fa-solid fa-house"></i></div>
+            <div class="inputs" style="height: 100%;"><textarea id="w3review" name="w3review" rows="4" cols=""></textarea></div>
+        </div>
+        <div class="submitb">
+            <input type="submit" value="Submit" style="margin: auto; padding: 4px; width: 100px; background-color: orange;" >
+        </div>
+        
+    </div>
+</form>
+</body>
+</html>
